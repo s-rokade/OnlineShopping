@@ -1,0 +1,23 @@
+{% extends 'base.html'%} {%block Main %}
+
+<table cellpading="15" cellpading="15" border='1'>
+    <tr>
+        <th>UserName</th>
+        <th>Total</th>
+        <th>Status</th>
+        <th>Order Date</th>
+        <th>Email</th>
+    </tr>
+    {% for i in ol%}
+    <tr>
+        <td>{{i.user.username}}</td>
+        <td>{{i.totalBill}}</td>
+        <td>{{i.status}}</td>
+        <td>{{i.orderDate}}</td>
+        <td>{{i.user.email}}</td>
+    </tr>
+    {%endfor%}
+</table>
+
+
+{%endblock%}

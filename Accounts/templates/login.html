@@ -1,0 +1,23 @@
+{%extends 'base.html'%} {%block Main%}
+<form method="POST">
+    {%csrf_token%}
+    <table>
+
+        <tr>
+            <td>UserName</td>
+            <td><input type="text" name="uname"></td>
+        </tr>
+
+        <tr>
+            <td>Password</td>
+            <td><input type="password" name="passw"></td>
+        </tr>
+
+        <tr>
+            <td><input type="submit" value="Submit"></td>
+            <td><input type="reset" value="Reset"></td>
+        </tr>
+
+    </table>
+</form>
+{%endblock%}

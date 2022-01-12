@@ -1,0 +1,14 @@
+{% extends 'base1.html'%} {%block GetData %}
+<br>
+<br>
+<form method="POST">
+    {%csrf_token%}
+    <tr>
+        <td><textarea rows="2" cols="80" name="shr"></textarea></td>
+
+        <td><input type="submit" value="Searh Product"></td>
+    </tr>
+
+</form>
+<br>
+<br> {%endblock%}
